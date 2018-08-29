@@ -1,0 +1,4 @@
+document = Document(file path)
+for block in iter_block_items(document):
+    print('found a block')
+    print(block.style.name if isinstance(block, Paragraph) else '<table>')
